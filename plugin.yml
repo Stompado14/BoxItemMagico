@@ -1,0 +1,6 @@
+name: BoxItemMagico
+version: 1.0.0
+author: Stompado
+main: me.itemmagico.BoxItemMagico
+commands:
+  itemmagico:

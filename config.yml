@@ -1,0 +1,64 @@
+#################################################
+#                  BoxItemMagico                #
+#               Plugin by: Stompado             #
+#            Plugin exclusivo da BoxStore       #
+#               © Copyright BoxStore            #
+#################################################
+
+#Prefixo das mensagens
+Prefixo: '&5&lITEMMAGICO &8»'
+
+#Mensagens Gerais
+ItemEnviado: '@prefixo &aVocê enviou &e{quantia} &ado item &e{item} &apara &e{jogador}&a.'
+ComoUsar: '@prefixo &cUtilize /itemmagico (jogador) (item) (quantia).'
+JogadorNaoEncontrado: '@prefixo &cEsse jogador não existe ou não está no servidor.'
+ItemInexistente: '@prefixo &cEsse item não existe.'
+NumeroInvalido: '@prefixo &cdigite um número válido.'
+NumeroMenorQue0: '@prefixo &cO número tem que ser maior que 0.'
+
+#Crie quantos items quiser!
+Items:
+  1:
+    Nome: '&a5M Money'
+    Material: 'PAPER:0' #Material : Data
+    Lore:
+      - ''
+      - '&fAo utilizar este item'
+      - '&fvocê receberá &a$5M &fde &aMoney.'
+      - ''
+      - '&aClique botão direito para ativar'
+    Comandos: #Coloque quantos comandos quiser
+      - 'money give {jogador} 2500000'
+      - 'money give {jogador} 2500000'
+    Titulos:
+      Ativar: true
+      Titulo: '&a&lMONEY' #Parte de cima
+      SubTitulo: '&fVocê ganhou &a5M &fde money ao usar o papel!' #Parte de baixo
+    Sons:
+      Ativar: true
+      Som: 'ORB_PICKUP'
+    Mensagens:
+      ActionBar: false #Se estiver "false" a mensagem irá no Chat
+      Mensagem: '&fVocê ganhou &a5M &fde money ao usar o papel!'
+  2:
+    Nome: '&61M Cash'
+    Material: 'QUARTZ:0'
+    Lore:
+      - ''
+      - '&fAo utilizar este item'
+      - '&fvocê receberá &61M &fde &6Cash.'
+      - ''
+      - '&aClique botão direito para ativar'
+    Comandos:
+      - 'cash give {jogador} 500000'
+      - 'cash give {jogador} 500000'
+    Titulos:
+      Ativar: false
+      Titulo: '&6&lCASH'
+      SubTitulo: '&fVocê ganhou &61M &fde cash ao usar o item!'
+    Sons:
+      Ativar: true
+      Som: 'LEVEL_UP'
+    Mensagens:
+      ActionBar: true
+      Mensagem: '&fVocê ganhou &61M &fde cash ao usar o item!'
